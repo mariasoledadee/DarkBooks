@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dark Books</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+</head>
+<body onload="configEventos()">
+    
+    <header>
+        <div class="menu">
+            <div class="menu-logo">
+                <a href="index.html">Dark Books</a>
+            </div>
+
+            <nav class="top-nav">
+                
+
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-secao="container1">Lançamentos</a>
+                    </li>
+
+                    <li class="nav-list">
+                        <a href="#" class="nav-link" data-secao="container2">Best-Sellers</a>
+                    </li>
+                    
+                    <li class="nav-list">
+                        <a href="#" class="nav-link" data-secao="container3">Mais Vendidos</a>
+                    </li>
+                </ul>
+
+                <div class="login-dropdown">
+                    <button class="button-dropdown" id="btn-login">
+                        Entrar
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+            
+                        <form id="form-usuario">
+            
+                            <fieldset class="inputs">
+                                <label for="email">Seu email:</label>
+                                <input type="email" class="username" name="email" placeholder="Ex:fulano@gmail.com">
+                                <a href="#">Esqueci minha senha</a>
+            
+                                <label for="password">Senha:</label>
+                                <input type="password" class="password" name = "password" placeholder="Digite sua senha">
+                                <a href="#">Não tem uma conta? Cadastre-se</a>
+                                
+                                <button type="submit" class="btn" data-btn="btn-sair" data-btnSair="btn-login">Entrar</button>
+                            </fieldset>
+                            
+                        </form>
+                    </div>
+                </div>
+                <button class="sair" id="btn-sair" data-sair="btn-login">Sair</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="produtos">
+        <div class="produtos-container">
+            <section id="container1" class="secao">
+                
+                
+                <div class="item-container" id="item1" data-desc="item1.1">
+                    <div>
+                        <img src="imagens/crimescene.png" alt="">
+                        <div class="hover" id="item1.1">
+                            <a href="#" class="comprar">
+                                <h2>Serial Killers: Anatomia do mal</h2>
+                                <h4>SERIAL KILLERS: ANATOMIA DO MAL é um dossiê definitivo sobre o universo sombrio dos psicopatas mais perversos da história.
+                                Escrito por Harold Schechter – que pesquisa o tema há mais de três décadas e já publicou, inclusive, a biografia de Ed Gein</h4>
+                                <h5>R$89,99</h5>
+                                <button class="btn-comprar">Comprar</button>
+                                <button class="btn-ocultar" data-item="item1">Ocultar</button>
+                            </a>
+                        </div>  
+                    </div>
+                </div>
+              
+                <div class="item-container" id="item2" data-desc="item2.1">
+                    <img src="imagens/columbine.png" alt=""> 
+                    <div class="hover" id="item2.1">
+                        <a href="#" class="comprar">
+                            <h2>Columbine</h2> 
+                            <h4>O livro inclui centenas de entrevistas com a maioria dos diretores envolvidos, a análise de mais de 25 mil páginas de evidências policiais,
+                            incontáveis horas de vídeo e áudio, e o trabalho extenso de outros jornalistas de confiança.</h4>
+                            <h5>R$69,99</h5>
+                            <button class="btn-comprar">Comprar</button>
+                            <button class="btn-ocultar" data-item="item2">Ocultar</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item-container" id="item3" data-desc="item3.1">
+                    <img src="imagens/o-colecionador.png" alt="">
+                    <div class="hover" id="item3.1">
+                        <a href="#" class="compras">
+                            <h2>O colecionador</h2>
+                            <h4>O romance é narrado por dois personagens antagônicos: o sequestrador e sua vítima. Frederick e Miranda.
+                            Frederick Clegg, um homem solitário, de origem humilde, menosprezado por uma sociedade esnobe, que encontra o grande amor de sua vida.
+                            E Miranda Gray, uma jovem estudante de artes sequestrada por um maníaco que acha que pode obrigá-la a se apaixonar por ele.</h4>
+                            <h5>R$59,99</h5>
+                            <button class="btn-comprar">Comprar</button>
+                            <button class="btn-ocultar" data-item="item3">Ocultar</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="container2" class="secao">
+                <div class="item-container" id="item4" data-desc="item4.1">
+                    <img src="imagens/btk (2).jpg" alt="">
+                    <div class="hover" id="item4.1">
+                        <a href="#" class="comprar">
+                            <h2 >BTK Profile: Máscara de Maldade</h2>
+                            <h4>Ao longo de três décadas, um monstro aterrorizou os moradores de Wichita, Kansas. Um assassino em série que
+                            amarrava, torturava e matava mulheres, homens e crianças, iludiu a polícia por anos a fio enquanto se vangloriava
+                            de suas terríveis façanhas para a mídia.</h4>
+                            
+                            <h5>R$79,99</h5>
+                            <button class="btn-comprar">Comprar</button>
+                            <button class="btn-ocultar" data-item="item4">Ocultar</button>
+                        </a> 
+                    </div>
+                </div>
+
+                <div class="item-container" id="item5" data-desc="item5.1">
+                    <img src="imagens/meuamigodahmer.png">
+                    <div class="hover" id="item5.1">
+                        <a href="#" class="comprar">
+                            <h2>Meu Amigo Dahmer</h2>
+                            <h4>MEU AMIGO DAHMER traz o perfil do psicopata Jeff Dahmer quando este ainda era um aluno do ensino médio. O autor do livro foi
+                            seu colega de turma nos anos 1970, e conviveu com o futuro “canibal de Milwaukee”</h4>
+                            
+                            <h5>R$69,99</h5>
+                            <button class="btn-comprar">Comprar</button>
+                            <button class="btn-ocultar" data-item="item5">Ocultar</button>
+                        </a> 
+                    </div>
+                </div>
+
+                <div class="item-container" id="item6" data-desc="item6.1">
+                    <img src="imagens/casosdefamilia.png" alt="">
+                    
+                    <div class="hover" id="item6.1">
+                        <a href="#" class="comprar">
+                            <h2>Casos de Familia: Arquivos Richthofen e arquivos nardoni</h2>
+                            <h4>A criminóloga Ilana Casoy, em CASOS DE FAMÍLIA: ARQUIVOS RICHTHOFEN E ARQUIVOS NARDONI, abre pela primeira vez seus cadernos
+                            de anotações utilizados durante a pesquisa na Polícia Civil, Científica e Ministério Público dos dois crimes</h4>
+                            <h5>R$59,99</h5>
+                            <button class="btn-comprar">Comprar</button>
+                            <button class="btn-ocultar" data-item="item6">Ocultar</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="container3" class="secao">
+                <div class="item-container" id="item7" data-desc="item7.1">
+                    <img src="imagens/Ed&Lorraine.png" alt="">
+                    
+                    <div class="hover" id="item7.1">
+                        <a href="#" class="comprar">
+                            <h2>Ed & Lorraine Warren: Lugar Sombrio</h2>
+                            <h4>ED & LORRAINE WARREN: LUGAR SOMBRIO, é o relato
+                            meticuloso dos fenômenos que infernizaram a vida de um casal norte-americano após sua mudança
+                            para uma antiga casa em que havia funcionado uma funerária anos antes.</h4>
+                            <h5>R$69,99</h5>
+                            <button class="btn-comprar">Comprar</button>
+                            <button class="btn-ocultar" data-item="item7">Ocultar</button>
+                        </a>  
+                    </div>   
+                </div>
+
+                <div  class="item-container" id="item8" data-desc="item8.1">
+                    
+                        <img src="imagens/medicinamacabra.png" alt="">
+                    
+                    <div class="hover" id="item8.1">
+                        <a href="#" class="comprar">
+                            <h2>Medicina Macabra</h2>
+                            <h4>Medicina Macabra é uma reunião de casos insólitos da história da Medicina que ocorreram em um
+                            período de trezentos anos. </h4>
+                        
+                            <h5>R$70,00</h5>
+                            <button class="btn-comprar">Comprar</button>
+                            <button class="btn-ocultar" data-item="item8">Ocultar</button>
+                        </a> 
+                    </div>
+                </div>
+            
+                <div  class="item-container" id="item9" data-desc="item9.1">
+                    
+                    <img src="imagens/ladykillers.png" alt="">
+                    
+                    <div class="hover" id="item9.1">
+                        <a href="#" class="comprar">
+                            <h2>Lady Killers: Assassinas em série</h2>
+                            <h4>Lady Killers: Assassinas em Série é um dossiê de histórias sobre assassinas em série e seus crimes ao longo dos
+                            últimos séculos, e o material perfeito para você mergulhar fundo em suas mentes.</h4>
+                            <h5>R$69,99</h5>
+                            <button class="btn-comprar">Comprar</button>
+                            <button class="btn-ocultar" data-item="item9">Ocultar</button>
+                        </a>
+                    </div>
+               </div>
+            </section>
+        </div>  
+    </div>
+    
+    <footer class="footer">
+        
+        <div class="footer-menushare">
+            <ul>
+                <li><a href="#" class="icon-facebook"><img src="icons/401-facebook.png" alt=""></a></li>
+                <li><a href="#" class="icon-facebook"><img src="icons/403-instagram.png" alt=""></a></li>
+                <li><a href="#" class="icon-twitter"><img src="icons/407-twitter.png" alt=""></a></li>
+                <li><a href="#" class="icon-youtube"><img src="icons/414-youtube.png" alt=""></a></li>
+            </ul>
+        </div>
+        <p>Copyright Dark Books</p>
+    </footer>
+
+    <script src="javascript/js.js"></script>
+</body>
+</html>
+
+
+    
+
+    
+  
+
+
+
+
+

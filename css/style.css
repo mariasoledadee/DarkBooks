@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    color: white;
+    background-color: black;
+    height: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    
+    max-width: 100%;
+}
+
+/*navegador*/
+
+.menu{
+    display: flex;
+    justify-content:flex-start; 
+    background-color: rgba(235, 235, 245, 0.137);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 80px;
+}
+.menu a{
+    color: white;
+    font-family: 'Frijole';
+}
+.menu-logo{
+    font-size: 1.375em; 
+    height: 70px; 
+}
+.menu-logo a{
+    font-size: 2.1em;
+    padding: 10px;
+    font-family: 'Frijole';
+    color:rgb(209, 5, 5);  
+}
+.top-nav{
+    width: 68%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.top-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.top-nav a{
+    display: block;
+    padding: 10px;
+    font-size: .8em;
+    letter-spacing: 2px;
+    transition: color 0.3s linear;
+}
+
+.nav-link:hover{
+    color: black;
+    transform: scale(1);
+}
+.nav-link.ativo{
+    background-color: red;
+    color: black;
+    margin-right: 1px;
+}
+.accordion.ativo{
+    color: black;
+    transform: scale(1);
+}
+
+
+
+
+/*login dropdown*/
+.button-dropdown{
+    border: none;
+    outline: none;
+    padding: 2px;
+    cursor: pointer;
+    color: black;
+    font-family: 'Frijole';
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.76);
+    transition: .3s linear;
+    opacity: 0.5;  
+}
+
+.sair{
+    border: none;
+    outline: none;
+    padding: 2px;
+    cursor: pointer;
+    color: black;
+    font-family: 'Frijole';
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.76);
+    transition: .3s linear;
+    opacity: 0.5; 
+    display: none;
+}
+
+.button-dropdown:hover{
+    opacity: 1;
+}
+fieldset{
+    background-color:rgb(0, 0, 0);
+    border: none;  
+}
+label{
+    font-size: 18px;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+}
+.login-dropdown .dropdown-content{
+    width: 100px;
+    display: none;
+    position: absolute;  
+}
+.login-dropdown:hover .dropdown-content{
+    display: block;
+    
+}
+.dropdown-content input{
+    display: inline-block;
+    background: rgba(128, 128, 128, 0.267);
+    padding:5px;
+    width: 170px;
+    border:1px solid;
+    margin: 5px;
+    transition: background 2s linear, border 3s;
+}
+.inputs input:focus{
+    background:rgba(128, 128, 128, 0.685);
+	border-color:white;
+    outline: none;
+}
+.inputs .btn{
+    width: 60px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    float: right;
+    background-color: rgba(46, 42, 42, 0.904) ;
+    margin: 5px;
+    color: white;
+    padding: 8px;
+}
+.btn:hover{
+    transition: cubic-bezier(1, 0, 0, 1);
+}
+.inputs a{
+    font-size: 12px;
+    display: inline-block;
+    padding: 0 0 0 5px;
+    margin: 0;
+    color: blue;
+    font-family: 'Playfair Display';
+}
+
+
+/*produtos*/
+
+.produtos{
+    position: relative;
+    top:150px;
+    background-color: rgba(255, 0, 0, 0.288);
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Frijole';
+    font-size: 2em;
+    padding-bottom: 10px;   
+}
+.produtos-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.item-container{
+    flex-wrap: no-wrap;
+    margin-bottom: 5px;
+    padding: 10px;
+    
+}
+.produtos h2{
+    color: red;
+    font-size: 1.5em;
+}
+.produtos h4{
+    margin: 10px;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    text-align: center;
+}
+h5{
+    margin: 5px;
+}
+
+/*comprar*/
+
+
+.btn-comprar, .btn-ocultar{
+    border: none;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    font-size: .8em;
+    background: rgba(255, 0, 0, 0.712);
+    transition: .3s linear;
+} 
+
+.btn-comprar:hover, .btn-ocultar:hover{
+    color: black;
+    transform: scale(1.3);
+    
+}
+
+.hover{
+    display: none;
+}
+
+.hover a{
+    color: white;
+    transition: color 3s linear;
+}
+
+.item-container{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+}
+.item-container img{
+    border-radius: 2px;
+    transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+.item-container:hover img{
+    transform: scale(1.5);
+}
+.item-container .hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;    
+    background: /*none repeat scroll 0 0*/ rgba(0, 0, 0, 0.774);    
+    border-radius: 2px;
+    text-align: center;
+    padding: 30px;
+    transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);*/
+}
+.item-container:hover .hover{
+    opacity: 1;
+    box-shadow: inset 0 0 100px 50px rgba(0, 0, 0, 0.329);
+}
+
+/*footer*/
+.footer{
+    text-align: center;
+	color: #c5ced1;
+    padding: 10px;
+    position: relative;
+    top:220px;
+    background:#25303e36;
+    width: 100%;
+}
+.footer-menushare li{
+    display: inline-flex;
+    margin: 0 0.8em;   
+}
+.footer-menushare{
+    background:#303d4c4d;	
+    padding: 5px;
+    width: 700px;
+    margin: auto;
+}
+.footer p{
+    margin: 5px;
+    padding: 5px;
+    font-size: .9em;
+}
+
+@media screen and (max-width: 43.75em){
+    
+    .menu{
+        background: rgb(31, 30, 30);
+        height: 250px;
+        position: static;
+    }
+    .top-nav ul {
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+    } 
+    .menu-logo{
+        color: black;
+        font-size: .9em;
+        margin: auto;
+        padding-left: 10px;
+    } 
+    .top-nav ul li a{
+        color: white;
+        margin: 2px;
+    } 
+    fieldset{
+       background: rgb(39, 28, 28);
+    }
+    .login-dropdown .submit{
+        background: black;
+        color: white;
+    }
+    .produtos{
+        background: none;
+    }
+    .secao{
+        display: flex;
+        flex-direction: column;
+        width: 500px; 
+    }    
+    .footer-menushare{
+        width: 100%;
+    }
+}
+
+
+    
